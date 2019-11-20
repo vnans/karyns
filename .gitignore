@@ -7,7 +7,6 @@
 /var/
 /.htaccess
 /.env
-/vendor/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
