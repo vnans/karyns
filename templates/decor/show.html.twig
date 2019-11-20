@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Decor{% endblock %}
+
+{% block body %}
+    <h1>Decor</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ decor.id }}</td>
+            </tr>
+            <tr>
+                <th>Libelle1</th>
+                <td>{{ decor.libelle1 }}</td>
+            </tr>
+            <tr>
+                <th>Libelle2</th>
+                <td>{{ decor.libelle2 }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ decor.description }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td>{{ decor.image }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('decor_index') }}">back to list</a>
+
+    <a href="{{ path('decor_edit', {'id': decor.id}) }}">edit</a>
+
+    {{ include('decor/_delete_form.html.twig') }}
+{% endblock %}

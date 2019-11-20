@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Impr index{% endblock %}
+
+{% block body %}
+    <h1>Impr index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Libelle1</th>
+                <th>Libelle2</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for impr in imprs %}
+            <tr>
+                <td>{{ impr.id }}</td>
+                <td>{{ impr.libelle1 }}</td>
+                <td>{{ impr.libelle2 }}</td>
+                <td>{{ impr.description }}</td>
+                <td>{{ impr.image }}</td>
+                <td>
+                    <a href="{{ path('impr_show', {'id': impr.id}) }}">show</a>
+                    <a href="{{ path('impr_edit', {'id': impr.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('impr_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Impr{% endblock %}
+
+{% block body %}
+    <h1>Edit Impr</h1>
+
+    {{ include('impr/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('impr_index') }}">back to list</a>
+
+    {{ include('impr/_delete_form.html.twig') }}
+{% endblock %}

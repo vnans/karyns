@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Impr{% endblock %}
+
+{% block body %}
+    <h1>Create new Impr</h1>
+
+    {{ include('impr/_form.html.twig') }}
+
+    <a href="{{ path('impr_index') }}">back to list</a>
+{% endblock %}

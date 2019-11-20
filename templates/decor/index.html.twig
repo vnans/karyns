@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Decor index{% endblock %}
+
+{% block body %}
+    <h1>Decor index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Libelle1</th>
+                <th>Libelle2</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for decor in decors %}
+            <tr>
+                <td>{{ decor.id }}</td>
+                <td>{{ decor.libelle1 }}</td>
+                <td>{{ decor.libelle2 }}</td>
+                <td>{{ decor.description }}</td>
+                <td>{{ decor.image }}</td>
+                <td>
+                    <a href="{{ path('decor_show', {'id': decor.id}) }}">show</a>
+                    <a href="{{ path('decor_edit', {'id': decor.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('decor_new') }}">Create new</a>
+{% endblock %}
