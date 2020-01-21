@@ -1,0 +1,218 @@
+{% extends 'base1.html.twig' %}
+
+{% block title %}Scoutangre{% endblock %}
+{% block body %}
+
+<div class="row">
+  <div class="col-lg-10">
+    <table class="table">
+        <tbody>
+
+          <tr>
+              <th>No </th>
+              <td>{{ scoutangre.id }}</td>
+          </tr>
+          <tr>
+              <th>Nom et prénoms</th>
+              <td>{{ scoutangre.nomprenoms }}</td>
+          </tr>
+          <tr>
+              <th>Date de naissance</th>
+              <td>{{ scoutangre.datenaiss ? scoutangre.datenaiss|date('d-m-Y') : '' }}</td>
+          </tr>
+          <tr>
+              <th>Lieu de naissance</th>
+              <td>{{ scoutangre.lieunaiss }}</td>
+          </tr>
+          <tr>
+              <th>Nationalité</th>
+              <td>{{ scoutangre.nationalite }}</td>
+          </tr>
+          <tr>
+              <th>Situation matrimoniale</th>
+              <td>{{ scoutangre.situationmatri }}</td>
+          </tr>
+          <tr>
+              <th>Sexe </th>
+              <td>{{ scoutangre.sexe ? 'M' : 'F' }}</td>
+          </tr>
+          <tr>
+              <th>Email</th>
+              <td>{{ scoutangre.email }}</td>
+          </tr>
+          <tr>
+              <th>Profession</th>
+              <td>{{ scoutangre.profession }}</td>
+          </tr>
+          <tr>
+              <th>Tel</th>
+              <td>{{ scoutangre.tel }}</td>
+          </tr>
+          <tr>
+              <th>Boite postale</th>
+              <td>{{ scoutangre.bpostale }}</td>
+          </tr>
+          <tr>
+              <th>Paroisse</th>
+              <td>{{ scoutangre.paroisse }}</td>
+          </tr>
+          <tr>
+              <th>Baptisé  </th>
+              <td>{{ scoutangre.baptise ? 'OUI' : 'NON' }}</td>
+          </tr>
+          <tr>
+              <th>Baptisé par :</th>
+              <td>{{ scoutangre.baptisepar }}</td>
+          </tr>
+          <tr>
+              <th>Date du baptême :</th>
+              <td>{{ scoutangre.datebapteme ? scoutangre.datebapteme|date('d-m-Y') : '' }}</td>
+          </tr>
+          <tr>
+              <th>Lieu du baptême :</th>
+              <td>{{ scoutangre.lieubapteme }}</td>
+          </tr>
+          <tr>
+              <th>Confirmé</th>
+              <td>{{ scoutangre.confrime ? 'OUI' : 'NON' }}</td>
+          </tr>
+          <tr>
+              <th>Confirmerpar</th>
+              <td>{{ scoutangre.confirmerpar }}</td>
+          </tr>
+          <tr>
+              <th>Dateconfirm</th>
+              <td>{{ scoutangre.dateconfirm ? scoutangre.dateconfirm|date('d-m-Y') : '' }}</td>
+          </tr>
+          <tr>
+              <th>Lieu de confirmation :</th>
+              <td>{{ scoutangre.lieuconfirm }}</td>
+          </tr>
+          <tr>
+              <th>Fonction en  paroisse :</th>
+              <td>{{ scoutangre.fonctparoisse }}</td>
+          </tr>
+          <tr>
+              <th>Date d'entrée dans le scoutisme :</th>
+              <td>{{ scoutangre.datescout ? scoutangre.datescout|date('d-m-Y') : '' }}</td>
+          </tr>
+          <tr>
+              <th>Lieu d'entrée dans le scoutisme :</th>
+              <td>{{ scoutangre.lieuscout }}</td>
+          </tr>
+          <tr>
+              <th>Date de la promesse</th>
+              <td>{{ scoutangre.datepromesse ? scoutangre.datepromesse|date('d-m-Y') : '' }}</td>
+          </tr>
+          <tr>
+              <th>Lieu de la promesse</th>
+              <td>{{ scoutangre.lieupromesse }}</td>
+          </tr>
+          <tr>
+              <th>Fonction scoute actuelle :</th>
+              <td>{{ scoutangre.fonctscoutactu }}</td>
+          </tr>
+          <tr>
+              <th>Date de nomination :</th>
+              <td>{{ scoutangre.datenomi ? scoutangre.datenomi|date('d-m-Y') : '' }}</td>
+          </tr>
+        </tbody>
+    </table>
+      <p><span> <b>STAGE DE FORMATION </b> </span></p>
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>STAGE</th>
+                      <th>DATE</th>
+                      <th>LIEU</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>{{ scoutangre.stage1 }}</td>
+                      <td>{{  scoutangre.stage1date ? scoutangre.stage1date|date('d-m-Y') : '' }}</td>
+                      <td>{{ scoutangre.stage1lieu }}</td>
+                    </tr>
+                    <tr>
+                      <td>{{ scoutangre.stage2 }}</td>
+                      <td>{{ scoutangre.stage2date ? scoutangre.stage2date|date('d-m-Y') : '' }}</td>
+                      <td>{{ scoutangre.stage2lieu }}</td>
+                    </tr>
+                    <tr>
+                      <td>{{ scoutangre.stage3 }}</td>
+                      <td>{{  scoutangre.stage3date ? scoutangre.stage3date|date('d-m-Y') : '' }}</td>
+                      <td>{{ scoutangre.stage3lieu }}</td>
+                    </tr>
+
+                  </tbody>
+  </table>
+  <p><span> <b>STAGE DE FORMATION INTERNATIONALE</b> </span></p>
+  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>STAGE</th>
+                    <th>DATE</th>
+                    <th>LIEU</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>{{ scoutangre.stageinter1 }}</td>
+                    <td>{{ scoutangre.Stageinter1date ? scoutangre.Stageinter1date|date('d-m-Y') : ''  }}</td>
+                    <td>{{ scoutangre.stageinter1lieu }}</td>
+                  </tr>
+                  <tr>
+                    <td>{{ scoutangre.stageinter2 }}</td>
+                    <td>{{ scoutangre.Stageinter2date ? scoutangre.Stageinter2date|date('d-m-Y') : '' }}</td>
+                    <td>{{ scoutangre.stageinter2lieu }}</td>
+                  </tr>
+
+
+                  </tbody>
+</table>
+<tr>
+    <th> <b>Proféssion :</b> </th>
+    <td>{{ scoutangre.profession }}</td>
+</tr>
+
+  </div>
+  <div class="col-lg-2">
+  <p><img src="{{ asset('img/scoutphoto/')}}{{ scoutangre.img }}" class="img-fluid" alt="{{ scoutangre.img }}"></p>
+
+  <div class="card-body">
+    <a href="{{ path('scoutangre_index') }}" class="btn btn-primary btn-icon-split">
+      <span class="icon text-white-50">
+        <i class="fas fa-flag"></i>
+      </span>
+      <span class="text">RETOURNER</span>
+    </a>
+    <div class="my-2"></div>
+
+    <a href="{{ path('scoutangre_edit', {'id': scoutangre.id}) }}" class="btn btn-warning btn-icon-split">
+      <span class="icon text-white-50">
+        <i class="fas fa-exclamation-triangle"></i>
+      </span>
+      <span class="text">MODIFIER</span>
+    </a>
+
+    <div class="my-2"></div>
+    <a href="{{ path('scoutangre_index') }}" class="btn btn-success btn-icon-info">
+      <span class="icon text-white-50">
+        <i class="fas fa-flag"></i>
+      </span>
+      <span class="text">IMPRIMER</span>
+    </a>
+
+
+  </div>
+</div>
+
+
+ {{ include('scoutangre/_delete_form.html.twig') }}
+  </div>
+</div>
+
+
+{% endblock %}

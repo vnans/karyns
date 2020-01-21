@@ -1,0 +1,13 @@
+{% extends 'base1.html.twig' %}
+
+{% block title %}Edit Scoutangre{% endblock %}
+
+{% block body %}
+    <h1>Edit Scoutangre</h1>
+
+    {{ include('scoutangre/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('scoutangre_index') }}">back to list</a>
+
+    {{ include('scoutangre/_delete_form.html.twig') }}
+{% endblock %}

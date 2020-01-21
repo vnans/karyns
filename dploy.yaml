@@ -1,0 +1,9 @@
+dev:
+    scheme: ftp
+    host: ftp.karynsgroup.com
+    port: 21
+    user: karyn1261957
+    pass: f1b3V6H4H
+    check: true
+    path:
+        remote: /

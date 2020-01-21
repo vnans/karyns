@@ -117,13 +117,13 @@ final class Versions
   'symfony/var-dumper' => 'v4.3.8@ea4940845535c85ff5c505e13b3205b0076d07bf',
   'symfony/web-profiler-bundle' => 'v4.3.8@6ce12ffe97d9e26091b0e7340a9d661fba64655e',
   'symfony/web-server-bundle' => 'v4.3.8@dc26b980900ddf3e9feade14e5b21c029e8ca92f',
-  'paragonie/random_compat' => '2.*@361f25fb32c57430f951344863a2a59eb4876b0a',
-  'symfony/polyfill-ctype' => '*@361f25fb32c57430f951344863a2a59eb4876b0a',
-  'symfony/polyfill-iconv' => '*@361f25fb32c57430f951344863a2a59eb4876b0a',
-  'symfony/polyfill-php71' => '*@361f25fb32c57430f951344863a2a59eb4876b0a',
-  'symfony/polyfill-php70' => '*@361f25fb32c57430f951344863a2a59eb4876b0a',
-  'symfony/polyfill-php56' => '*@361f25fb32c57430f951344863a2a59eb4876b0a',
-  '__root__' => 'dev-master@361f25fb32c57430f951344863a2a59eb4876b0a',
+  'paragonie/random_compat' => '2.*@ffb1cd5582ef1f9595d0c9aefe5ff0569fc03186',
+  'symfony/polyfill-ctype' => '*@ffb1cd5582ef1f9595d0c9aefe5ff0569fc03186',
+  'symfony/polyfill-iconv' => '*@ffb1cd5582ef1f9595d0c9aefe5ff0569fc03186',
+  'symfony/polyfill-php71' => '*@ffb1cd5582ef1f9595d0c9aefe5ff0569fc03186',
+  'symfony/polyfill-php70' => '*@ffb1cd5582ef1f9595d0c9aefe5ff0569fc03186',
+  'symfony/polyfill-php56' => '*@ffb1cd5582ef1f9595d0c9aefe5ff0569fc03186',
+  '__root__' => 'dev-master@ffb1cd5582ef1f9595d0c9aefe5ff0569fc03186',
 );
 
     private function __construct()

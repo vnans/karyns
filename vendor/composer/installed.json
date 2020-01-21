@@ -1165,6 +1165,58 @@
         ]
     },
     {
+        "name": "easycorp/easy-log-handler",
+        "version": "v1.0.9",
+        "version_normalized": "1.0.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/EasyCorp/easy-log-handler.git",
+            "reference": "224e1dfcf9455aceee89cd0af306ac097167fac1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/EasyCorp/easy-log-handler/zipball/224e1dfcf9455aceee89cd0af306ac097167fac1",
+            "reference": "224e1dfcf9455aceee89cd0af306ac097167fac1",
+            "shasum": ""
+        },
+        "require": {
+            "monolog/monolog": "~1.6|~2.0",
+            "php": ">=7.1",
+            "symfony/yaml": "^3.4|^4.0|^5.0"
+        },
+        "time": "2019-10-24T07:13:31+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "EasyCorp\\EasyLog\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Javier Eguiluz",
+                "email": "javiereguiluz@gmail.com"
+            },
+            {
+                "name": "Project Contributors",
+                "homepage": "https://github.com/EasyCorp/easy-log-handler"
+            }
+        ],
+        "description": "A handler for Monolog that optimizes log messages to be processed by humans instead of software. Improve your productivity with logs that are easy to understand.",
+        "homepage": "https://github.com/EasyCorp/easy-log-handler",
+        "keywords": [
+            "easy",
+            "log",
+            "logging",
+            "monolog",
+            "productivity"
+        ]
+    },
+    {
         "name": "egulias/email-validator",
         "version": "2.1.11",
         "version_normalized": "2.1.11.0",
@@ -1410,6 +1462,60 @@
             "log",
             "logging",
             "psr-3"
+        ]
+    },
+    {
+        "name": "nikic/php-parser",
+        "version": "v4.3.0",
+        "version_normalized": "4.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nikic/PHP-Parser.git",
+            "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9a9981c347c5c49d6dfe5cf826bb882b824080dc",
+            "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc",
+            "shasum": ""
+        },
+        "require": {
+            "ext-tokenizer": "*",
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "ircmaxell/php-yacc": "0.0.5",
+            "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+        },
+        "time": "2019-11-08T13:50:10+00:00",
+        "bin": [
+            "bin/php-parse"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PhpParser\\": "lib/PhpParser"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Nikita Popov"
+            }
+        ],
+        "description": "A PHP parser written in PHP",
+        "keywords": [
+            "parser",
+            "php"
         ]
     },
     {
@@ -2094,6 +2200,67 @@
         "homepage": "https://symfony.com"
     },
     {
+        "name": "symfony/browser-kit",
+        "version": "v4.3.8",
+        "version_normalized": "4.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/browser-kit.git",
+            "reference": "b14fa08508afd152257d5dcc7adb5f278654d972"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/b14fa08508afd152257d5dcc7adb5f278654d972",
+            "reference": "b14fa08508afd152257d5dcc7adb5f278654d972",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/dom-crawler": "~3.4|~4.0"
+        },
+        "require-dev": {
+            "symfony/css-selector": "~3.4|~4.0",
+            "symfony/http-client": "^4.3",
+            "symfony/mime": "^4.3",
+            "symfony/process": "~3.4|~4.0"
+        },
+        "suggest": {
+            "symfony/process": ""
+        },
+        "time": "2019-10-28T17:07:32+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\BrowserKit\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony BrowserKit Component",
+        "homepage": "https://symfony.com"
+    },
+    {
         "name": "symfony/cache",
         "version": "v4.3.8",
         "version_normalized": "4.3.8.0",
@@ -2377,6 +2544,61 @@
         "homepage": "https://symfony.com"
     },
     {
+        "name": "symfony/css-selector",
+        "version": "v4.3.8",
+        "version_normalized": "4.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/css-selector.git",
+            "reference": "f4b3ff6a549d9ed28b2b0ecd1781bf67cf220ee9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/f4b3ff6a549d9ed28b2b0ecd1781bf67cf220ee9",
+            "reference": "f4b3ff6a549d9ed28b2b0ecd1781bf67cf220ee9",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "time": "2019-10-02T08:36:26+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\CssSelector\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Jean-François Simon",
+                "email": "jeanfrancois.simon@sensiolabs.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony CssSelector Component",
+        "homepage": "https://symfony.com"
+    },
+    {
         "name": "symfony/debug",
         "version": "v4.3.8",
         "version_normalized": "4.3.8.0",
@@ -2433,6 +2655,106 @@
         ],
         "description": "Symfony Debug Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/debug-bundle",
+        "version": "v4.3.8",
+        "version_normalized": "4.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/debug-bundle.git",
+            "reference": "bb83f93785dae1f9c227a408ced3eb3f86399bf8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/debug-bundle/zipball/bb83f93785dae1f9c227a408ced3eb3f86399bf8",
+            "reference": "bb83f93785dae1f9c227a408ced3eb3f86399bf8",
+            "shasum": ""
+        },
+        "require": {
+            "ext-xml": "*",
+            "php": "^7.1.3",
+            "symfony/http-kernel": "~3.4|~4.0",
+            "symfony/twig-bridge": "~3.4|~4.0",
+            "symfony/var-dumper": "^4.1.1"
+        },
+        "conflict": {
+            "symfony/config": "<4.2",
+            "symfony/dependency-injection": "<3.4"
+        },
+        "require-dev": {
+            "symfony/config": "~4.2",
+            "symfony/dependency-injection": "~3.4|~4.0",
+            "symfony/web-profiler-bundle": "~3.4|~4.0"
+        },
+        "suggest": {
+            "symfony/config": "For service container configuration",
+            "symfony/dependency-injection": "For using as a service from the container"
+        },
+        "time": "2019-07-19T08:33:28+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Bundle\\DebugBundle\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony DebugBundle",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/debug-pack",
+        "version": "v1.0.7",
+        "version_normalized": "1.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/debug-pack.git",
+            "reference": "09a4a1e9bf2465987d4f79db0ad6c11cc632bc79"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/debug-pack/zipball/09a4a1e9bf2465987d4f79db0ad6c11cc632bc79",
+            "reference": "09a4a1e9bf2465987d4f79db0ad6c11cc632bc79",
+            "shasum": ""
+        },
+        "require": {
+            "easycorp/easy-log-handler": "^1.0.7",
+            "php": "^7.0",
+            "symfony/debug-bundle": "*",
+            "symfony/monolog-bundle": "^3.0",
+            "symfony/profiler-pack": "*",
+            "symfony/var-dumper": "*"
+        },
+        "time": "2018-12-10T12:11:11+00:00",
+        "type": "symfony-pack",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "A debug pack for Symfony projects"
     },
     {
         "name": "symfony/dependency-injection",
@@ -2600,6 +2922,69 @@
             }
         ],
         "description": "Symfony Doctrine Bridge",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/dom-crawler",
+        "version": "v4.3.8",
+        "version_normalized": "4.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/dom-crawler.git",
+            "reference": "4b9efd5708c3a38593e19b6a33e40867f4f89d72"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/4b9efd5708c3a38593e19b6a33e40867f4f89d72",
+            "reference": "4b9efd5708c3a38593e19b6a33e40867f4f89d72",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/polyfill-ctype": "~1.8",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "conflict": {
+            "masterminds/html5": "<2.6"
+        },
+        "require-dev": {
+            "masterminds/html5": "^2.6",
+            "symfony/css-selector": "~3.4|~4.0"
+        },
+        "suggest": {
+            "symfony/css-selector": ""
+        },
+        "time": "2019-10-28T17:07:32+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\DomCrawler\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony DomCrawler Component",
         "homepage": "https://symfony.com"
     },
     {
@@ -3623,6 +4008,76 @@
         ]
     },
     {
+        "name": "symfony/maker-bundle",
+        "version": "v1.14.3",
+        "version_normalized": "1.14.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/maker-bundle.git",
+            "reference": "c864e7f9b8d1e1f5f60acc3beda11299f637aded"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/c864e7f9b8d1e1f5f60acc3beda11299f637aded",
+            "reference": "c864e7f9b8d1e1f5f60acc3beda11299f637aded",
+            "shasum": ""
+        },
+        "require": {
+            "doctrine/inflector": "^1.2",
+            "nikic/php-parser": "^4.0",
+            "php": "^7.0.8",
+            "symfony/config": "^3.4|^4.0|^5.0",
+            "symfony/console": "^3.4|^4.0|^5.0",
+            "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+            "symfony/filesystem": "^3.4|^4.0|^5.0",
+            "symfony/finder": "^3.4|^4.0|^5.0",
+            "symfony/framework-bundle": "^3.4|^4.0|^5.0",
+            "symfony/http-kernel": "^3.4|^4.0|^5.0"
+        },
+        "require-dev": {
+            "doctrine/doctrine-bundle": "^1.8|^2.0",
+            "doctrine/orm": "^2.3",
+            "friendsofphp/php-cs-fixer": "^2.8",
+            "friendsoftwig/twigcs": "^3.1.2",
+            "symfony/http-client": "^4.3|^5.0",
+            "symfony/phpunit-bridge": "^4.3|^5.0",
+            "symfony/process": "^3.4|^4.0|^5.0",
+            "symfony/security-core": "^3.4|^4.0|^5.0",
+            "symfony/yaml": "^3.4|^4.0|^5.0"
+        },
+        "time": "2019-11-07T00:56:03+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Bundle\\MakerBundle\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Maker helps you create empty commands, controllers, form classes, tests and more so you can forget about writing boilerplate code.",
+        "homepage": "https://symfony.com/doc/current/bundles/SymfonyMakerBundle/index.html",
+        "keywords": [
+            "code generator",
+            "generator",
+            "scaffold",
+            "scaffolding"
+        ]
+    },
+    {
         "name": "symfony/mime",
         "version": "v4.3.8",
         "version_normalized": "4.3.8.0",
@@ -3901,6 +4356,73 @@
             "MIT"
         ],
         "description": "A pack for the Doctrine ORM"
+    },
+    {
+        "name": "symfony/phpunit-bridge",
+        "version": "v4.3.8",
+        "version_normalized": "4.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/phpunit-bridge.git",
+            "reference": "c216b32261358a820bb4217eb3a20e3f437a484e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/c216b32261358a820bb4217eb3a20e3f437a484e",
+            "reference": "c216b32261358a820bb4217eb3a20e3f437a484e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9"
+        },
+        "conflict": {
+            "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
+        },
+        "suggest": {
+            "symfony/debug": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
+        },
+        "time": "2019-10-30T12:58:49+00:00",
+        "bin": [
+            "bin/simple-phpunit"
+        ],
+        "type": "symfony-bridge",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            },
+            "thanks": {
+                "name": "phpunit/phpunit",
+                "url": "https://github.com/sebastianbergmann/phpunit"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "bootstrap.php"
+            ],
+            "psr-4": {
+                "Symfony\\Bridge\\PhpUnit\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony PHPUnit Bridge",
+        "homepage": "https://symfony.com"
     },
     {
         "name": "symfony/polyfill-intl-icu",
@@ -4254,6 +4776,36 @@
         ],
         "description": "Symfony Process Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/profiler-pack",
+        "version": "v1.0.4",
+        "version_normalized": "1.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/profiler-pack.git",
+            "reference": "99c4370632c2a59bb0444852f92140074ef02209"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/profiler-pack/zipball/99c4370632c2a59bb0444852f92140074ef02209",
+            "reference": "99c4370632c2a59bb0444852f92140074ef02209",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.0",
+            "symfony/stopwatch": "*",
+            "symfony/twig-bundle": "*",
+            "symfony/web-profiler-bundle": "*"
+        },
+        "time": "2018-12-10T12:11:44+00:00",
+        "type": "symfony-pack",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "A pack for the Symfony web profiler"
     },
     {
         "name": "symfony/property-access",
@@ -5118,6 +5670,36 @@
         "homepage": "http://symfony.com"
     },
     {
+        "name": "symfony/test-pack",
+        "version": "v1.0.6",
+        "version_normalized": "1.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/test-pack.git",
+            "reference": "ff87e800a67d06c423389f77b8209bc9dc469def"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/test-pack/zipball/ff87e800a67d06c423389f77b8209bc9dc469def",
+            "reference": "ff87e800a67d06c423389f77b8209bc9dc469def",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.0",
+            "symfony/browser-kit": "*",
+            "symfony/css-selector": "*",
+            "symfony/phpunit-bridge": "*"
+        },
+        "time": "2019-06-21T06:27:32+00:00",
+        "type": "symfony-pack",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "A pack for functional and end-to-end testing within a Symfony app"
+    },
+    {
         "name": "symfony/translation",
         "version": "v4.3.8",
         "version_normalized": "4.3.8.0",
@@ -5532,6 +6114,84 @@
         "homepage": "https://symfony.com"
     },
     {
+        "name": "symfony/var-dumper",
+        "version": "v4.3.8",
+        "version_normalized": "4.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/var-dumper.git",
+            "reference": "ea4940845535c85ff5c505e13b3205b0076d07bf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/ea4940845535c85ff5c505e13b3205b0076d07bf",
+            "reference": "ea4940845535c85ff5c505e13b3205b0076d07bf",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/polyfill-mbstring": "~1.0",
+            "symfony/polyfill-php72": "~1.5"
+        },
+        "conflict": {
+            "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
+            "symfony/console": "<3.4"
+        },
+        "require-dev": {
+            "ext-iconv": "*",
+            "symfony/console": "~3.4|~4.0",
+            "symfony/process": "~3.4|~4.0",
+            "twig/twig": "~1.34|~2.4"
+        },
+        "suggest": {
+            "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
+            "ext-intl": "To show region name in time zone dump",
+            "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
+        },
+        "time": "2019-10-13T12:02:04+00:00",
+        "bin": [
+            "Resources/bin/var-dump-server"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "Resources/functions/dump.php"
+            ],
+            "psr-4": {
+                "Symfony\\Component\\VarDumper\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony mechanism for exploring and dumping PHP variables",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "debug",
+            "dump"
+        ]
+    },
+    {
         "name": "symfony/var-exporter",
         "version": "v4.3.8",
         "version_normalized": "4.3.8.0",
@@ -5667,6 +6327,135 @@
             "psr13",
             "push"
         ]
+    },
+    {
+        "name": "symfony/web-profiler-bundle",
+        "version": "v4.3.8",
+        "version_normalized": "4.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/web-profiler-bundle.git",
+            "reference": "6ce12ffe97d9e26091b0e7340a9d661fba64655e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/6ce12ffe97d9e26091b0e7340a9d661fba64655e",
+            "reference": "6ce12ffe97d9e26091b0e7340a9d661fba64655e",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/config": "^4.2",
+            "symfony/http-kernel": "^4.3",
+            "symfony/routing": "~3.4|~4.0",
+            "symfony/twig-bundle": "~4.2",
+            "symfony/var-dumper": "~3.4|~4.0",
+            "twig/twig": "^1.41|^2.10"
+        },
+        "conflict": {
+            "symfony/dependency-injection": "<3.4",
+            "symfony/form": "<4.3",
+            "symfony/messenger": "<4.2",
+            "symfony/var-dumper": "<3.4"
+        },
+        "require-dev": {
+            "symfony/console": "~3.4|~4.0",
+            "symfony/dependency-injection": "~3.4|~4.0",
+            "symfony/stopwatch": "~3.4|~4.0"
+        },
+        "time": "2019-10-23T17:52:52+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Bundle\\WebProfilerBundle\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony WebProfilerBundle",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/web-server-bundle",
+        "version": "v4.3.8",
+        "version_normalized": "4.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/web-server-bundle.git",
+            "reference": "dc26b980900ddf3e9feade14e5b21c029e8ca92f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/web-server-bundle/zipball/dc26b980900ddf3e9feade14e5b21c029e8ca92f",
+            "reference": "dc26b980900ddf3e9feade14e5b21c029e8ca92f",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/config": "~3.4|~4.0",
+            "symfony/console": "~3.4|~4.0",
+            "symfony/dependency-injection": "~3.4|~4.0",
+            "symfony/http-kernel": "~3.4|~4.0",
+            "symfony/polyfill-ctype": "~1.8",
+            "symfony/process": "^3.4.2|^4.0.2"
+        },
+        "suggest": {
+            "symfony/expression-language": "For using the filter option of the log server.",
+            "symfony/monolog-bridge": "For using the log server."
+        },
+        "time": "2019-08-20T14:27:59+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Bundle\\WebServerBundle\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony WebServerBundle",
+        "homepage": "https://symfony.com"
     },
     {
         "name": "symfony/yaml",
